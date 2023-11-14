@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Short Notes</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="회원가입">회원가입</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+</resources>

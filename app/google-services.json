@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "694889458981",
+    "project_id": "short-notes-c7873",
+    "storage_bucket": "short-notes-c7873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694889458981:android:d2d304a04be18f2ea5becc",
+        "android_client_info": {
+          "package_name": "com.zypher.shortnotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJpnH_wUXnfcHaiOz0ZwaSB8i5H6_HiPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
