@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
             Log.d("MainActivity", "Button clicked");
             Intent intent = new Intent(MainActivity.this, NoteActivity.class);
             startActivity(intent);
+            finish();
+            return;
         });
     }
 }
