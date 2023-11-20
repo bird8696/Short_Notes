@@ -14,10 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button Note_Button = findViewById(R.id.Note_btn);
+        Button Chat_Button = findViewById(R.id.Chat_btn);
 
         Note_Button.setOnClickListener(v -> {
             Log.d("MainActivity", "Button clicked");
             Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
+
+        Chat_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, ChatActivity.class);
             startActivity(intent);
             finish();
             return;

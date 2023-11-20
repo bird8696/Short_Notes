@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">Short Notes</string>
-    <string name="login">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="app_name">Multipurpose App</string>
     <string name="회원가입">회원가입</string>
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Click to register</string>
+
+    <string name="title">Login to app</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="ready">if you already an account</string>
+    <string name="email">Your Email</string>
+    <string name="name">Your Full Name</string>
+    <string name="password">Your Password</string>
+    <string name="forgePassword">Forget Password</string>
+    <string name="dontReady">I dont have an account</string>
+    <string name="ready_up">to get started with app.</string>
+    <string name="dontReady_up">I already have an account</string>
 </resources>
