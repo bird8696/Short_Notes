@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".AiartActivity">
+    
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI 이미지 자동 생성"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginVertical="20dp"
+            android:hint="생성할 이미지 주제를 입력 하세요"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textSize="20dp"
+            android:text="생성"
+            android:padding="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:indeterminateTint="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="40dp"
+            android:src="#ACACAC"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -48,6 +48,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.hbb20:ccp:2.5.0")
+    implementation ("com.github.KwabenBerko:News-API-Java:1.0.2")
+    implementation ("com.squareup.picasso:picasso:2.8")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
 
     /* FireBase 인증 */
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))

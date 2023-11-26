@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Button Note_Button = findViewById(R.id.Note_btn);
         Button Chat_Button = findViewById(R.id.Chat_btn);
         Button Calculator_Button = findViewById(R.id.Cal_btn);
+        Button News_Button = findViewById(R.id.News_btn);
+        Button Ai_Make_Button = findViewById(R.id.Ai_make_btn);
 
         Note_Button.setOnClickListener(v -> {
             Log.d("MainActivity", "Button clicked");
@@ -41,7 +43,21 @@ public class MainActivity extends AppCompatActivity {
             return;
         });
 
+        News_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, SplashActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
 
+        Ai_Make_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, AiartActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
 
     }
 }

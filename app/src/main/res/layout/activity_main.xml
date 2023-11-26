@@ -27,4 +27,16 @@
         android:layout_height="wrap_content"
         android:text="계산기" />
 
+    <android.widget.Button
+        android:id="@+id/News_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뉴스" />
+
+    <android.widget.Button
+        android:id="@+id/Ai_make_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI 이미지 생성" />
+
 </LinearLayout>
