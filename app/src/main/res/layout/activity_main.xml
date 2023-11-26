@@ -13,12 +13,18 @@
     android:id="@+id/Note_btn"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Go to Note Page" />
+    android:text="노트" />
 
     <android.widget.Button
         android:id="@+id/Chat_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go to Chat Page" />
+        android:text="채팅" />
+
+    <android.widget.Button
+        android:id="@+id/Cal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계산기" />
 
 </LinearLayout>

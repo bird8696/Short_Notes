@@ -26,9 +26,13 @@
     <color name="main_color">#00aac3</color>
     <color name="gry">#f5f5f5</color>
     <color name="transparent">#00000000</color>
+    <color name="green_light">#C9FFC7</color>
     <color name="green_dark">#227302</color>
     <color name="red_light">#F7C9C1</color>
     <color name="red_dark">#A41901</color>
+
+    <color name="orange">#FFA500</color>
+
 
 
 </resources>

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button Note_Button = findViewById(R.id.Note_btn);
         Button Chat_Button = findViewById(R.id.Chat_btn);
+        Button Calculator_Button = findViewById(R.id.Cal_btn);
 
         Note_Button.setOnClickListener(v -> {
             Log.d("MainActivity", "Button clicked");
@@ -31,5 +32,16 @@ public class MainActivity extends AppCompatActivity {
             finish();
             return;
         });
+
+        Calculator_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
+
+
+
     }
 }
