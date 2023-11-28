@@ -1,5 +1,6 @@
 package com.zypher.shortnotes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,7 @@ public class NewsActivity extends AppCompatActivity implements View.OnClickListe
     NewsRecyclerAdapter adapter;
     LinearProgressIndicator progressIndicator;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7;
+    Button Home_Button;
     SearchView searchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,15 @@ public class NewsActivity extends AppCompatActivity implements View.OnClickListe
         btn5 = findViewById(R.id.btn_05);
         btn6 = findViewById(R.id.btn_06);
         btn7 = findViewById(R.id.btn_07);
+        Home_Button = findViewById(R.id.Home_btn);
+
+        Home_Button.setOnClickListener(v -> {
+            Log.d("NewsActivity", "Button clicked");
+            Intent intent = new Intent(NewsActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);

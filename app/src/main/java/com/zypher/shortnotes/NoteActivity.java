@@ -2,7 +2,9 @@ package com.zypher.shortnotes;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,14 +27,23 @@ public class NoteActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private CollectionReference notesCollection;
 
+    Button Home_Button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
-
         noteContainer = findViewById(R.id.notesContainer);
         Button saveButton = findViewById(R.id.saveButton);
         Button deleteAllButton = findViewById(R.id.deleteAllButton);
+        Home_Button = findViewById(R.id.Home_btn);
+
+        Home_Button.setOnClickListener(v -> {
+            Log.d("NoteActivity", "Button clicked");
+            Intent intent = new Intent(NoteActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
 
         noteList = new ArrayList<>();
 

@@ -45,6 +45,15 @@
             android:layout_marginTop="16dp"/>
 
         <android.widget.Button
+            android:id="@+id/Home_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/note_btn"
+            android:text="HOME"
+            android:layout_marginTop="16dp"/>
+
+        <android.widget.Button
             android:id="@+id/deleteAllButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -52,6 +61,7 @@
             android:background="@drawable/note_btn"
             android:text="전체 삭제"
             android:layout_marginTop="16dp"/>
+
     </LinearLayout>
 
     <TextView

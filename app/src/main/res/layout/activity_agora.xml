@@ -45,6 +45,18 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/HomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:onClick="leaveChannel"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
                 android:id="@+id/LeaveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -1,7 +1,8 @@
 package com.zypher.shortnotes;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -48,10 +49,18 @@ public class CalculatorActivity extends AppCompatActivity {
             screen.setText("0");
         });
 
-        off.setOnClickListener(view -> screen.setVisibility(View.GONE));
+        /*off.setOnClickListener(view -> screen.setVisibility(View.GONE));
         on.setOnClickListener(view -> {
             screen.setVisibility(View.VISIBLE);
             screen.setText("0");
+        });*/
+
+        off.setOnClickListener(v -> {
+            Log.d("CalculatorActivity", "Button clicked");
+            Intent intent = new Intent(CalculatorActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+            return;
         });
 
         ArrayList<Button> nums = new ArrayList<>();

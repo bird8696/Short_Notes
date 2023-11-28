@@ -14,10 +14,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
+        <Button
+            android:id="@+id/Home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:text="HOME"/>
+
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             app:videoId="lLIpFxWtqCQ"
             app:autoPlay="false" />
 
