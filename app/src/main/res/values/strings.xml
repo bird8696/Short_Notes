@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Multipurpose App</string>
+
+    <string name="token">007eJxTYHjj/cNpquV5411l2l90bbaHsn/L4M5mPN7kfrrXPXvLWRsFBuOUFIMUI/PUNKOkRJOUZMtE09QkS5M00zQLYwtDi1TjkAUpqQ2BjAx8i28yMzJAIIjPzpCdUpKanFHMwAAAsq4gsw==</string>
+    <string name="appId">3dd0d27ef2ba4dc9a5eb94f5f83818e3</string>
+    <string name="channel">kdtechs</string>
+
     <string name="회원가입">회원가입</string>
     <string name="click_to_login">Click to login</string>
     <string name="click_to_register">Click to register</string>

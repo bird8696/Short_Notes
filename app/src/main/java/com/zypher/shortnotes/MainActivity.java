@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Button Calculator_Button = findViewById(R.id.Cal_btn);
         Button News_Button = findViewById(R.id.News_btn);
         Button Ai_Make_Button = findViewById(R.id.Ai_make_btn);
+        Button YouTube_Button = findViewById(R.id.youtube_btn);
+        Button Agora_Button = findViewById(R.id.agora_btn);
 
         Note_Button.setOnClickListener(v -> {
             Log.d("MainActivity", "Button clicked");
@@ -54,6 +56,22 @@ public class MainActivity extends AppCompatActivity {
         Ai_Make_Button.setOnClickListener(v -> {
             Log.d("MainActivity", "Button clicked");
             Intent intent = new Intent(MainActivity.this, AiartActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
+
+        YouTube_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, YoutubeActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
+
+        Agora_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Button clicked");
+            Intent intent = new Intent(MainActivity.this, AgoraActivity.class);
             startActivity(intent);
             finish();
             return;

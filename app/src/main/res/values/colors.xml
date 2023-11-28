@@ -36,6 +36,8 @@
     <color name="my_primary2">#00897B</color>
     <color name="my_secondary2">#26A69A</color>
 
+    <color name="lavender">#8692f7</color>
+    <color name="dark_gray">#A9A9A9</color>
 
 
 </resources>
