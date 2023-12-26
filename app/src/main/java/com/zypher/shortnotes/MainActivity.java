@@ -3,6 +3,7 @@ package com.zypher.shortnotes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView YouTube_Image_View = findViewById(R.id.youtube_View);
         ImageView Agora_Image_View = findViewById(R.id.agora_View);
         ImageView Google_Navigation_View = findViewById(R.id.google_navigation_View);
+        ImageButton Forward_Button = findViewById(R.id.forwardButton);
 
 
         Note_Image_View.setOnClickListener(v -> {
@@ -70,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
         Google_Navigation_View.setOnClickListener(v -> {
             Log.d("MainActivity", "Image clicked");
             Intent intent = new Intent(MainActivity.this, MapNavigationActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        });
+
+        Forward_Button.setOnClickListener(v -> {
+            Log.d("MainActivity", "Image clicked");
+            Intent intent = new Intent(MainActivity.this, Main_gameActivity.class);
             startActivity(intent);
             finish();
             return;
